@@ -2,17 +2,62 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Hello, World! - A-Frame</title>
-    <meta name="description" content="Hello, World! - A-Frame">
-    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <title>Geology Sample Viewer</title>
+    <meta name="description" content="A Simple Sample Viewer for ERS101 at the University of Maine">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+
   </head>
   <body>
+    <script type="text/javascript">
+    AFRAME.registerComponent('drag-rotate-component',{
+      schema : { speed : {default:1}},
+      init : function(){
+        this.ifMouseDown = false;
+        this.x_cord = 0;
+        this.y_cord = 0;
+        document.addEventListener('mousedown',this.OnDocumentMouseDown.bind(this));
+        document.addEventListener('mouseup',this.OnDocumentMouseUp.bind(this));
+        document.addEventListener('mousemove',this.OnDocumentMouseMove.bind(this));
+      },
+      OnDocumentMouseDown : function(event){
+        this.ifMouseDown = true;
+        this.x_cord = event.clientX;
+        this.y_cord = event.clientY;
+      },
+      OnDocumentMouseUp : function(){
+        this.ifMouseDown = false;
+      },
+      OnDocumentMouseMove : function(event)
+      {
+        if(this.ifMouseDown)
+        {
+          var temp_x = event.clientX-this.x_cord;
+          var temp_y = event.clientY-this.y_cord;
+          if(Math.abs(temp_y)<Math.abs(temp_x))
+          {
+            this.el.object3D.rotateY(temp_x*this.data.speed/100);
+          }
+          else
+          {
+            this.el.object3D.rotateX(temp_y*this.data.speed/100);
+          }
+          this.x_cord = event.clientX;
+          this.y_cord = event.clientY;
+        }
+      }
+    });
+  </script>
+
     <a-scene>
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
+      <a-assets>
+         <a-asset-item id="sample" src="assets/sample1.gltf"></a-asset-item>
+       </a-assets>
+       <a-entity camera look-controls="enabled:false" position="0 1.6 .4"></a-entity>
+
+      <a-sky color="lightblue"></a-sky>
+
+      <!-- Using the asset management system. -->
+      <a-gltf-model drag-rotate-component src="#sample" position="0 1.6 0"></a-gltf-model>
     </a-scene>
   </body>
 </html>
