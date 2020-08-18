@@ -1,0 +1,164 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.2.75",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                3
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Mesh_35"
+        },
+        {
+            "children" : [
+                0
+            ],
+            "name" : "model.obj.cleaner.materialmerger.gles"
+        },
+        {
+            "children" : [
+                1
+            ],
+            "name" : "RootNode (model correction matrix)",
+            "rotation" : [
+                -0.8672483563423157,
+                0.35987451672554016,
+                -0.16594214737415314,
+                0.3013865053653717
+            ],
+            "translation" : [
+                -0.031429070979356766,
+                -0.0602678507566452,
+                0.03355352580547333
+            ]
+        },
+        {
+            "children" : [
+                2
+            ],
+            "name" : "RootNode (gltf orientation matrix)",
+            "rotation" : [
+                -0.7071067690849304,
+                0,
+                0,
+                0.7071067690849304
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "emissiveFactor" : [
+                1,
+                1,
+                1
+            ],
+            "emissiveTexture" : {
+                "index" : 0,
+                "texCoord" : 0
+            },
+            "name" : "model",
+            "pbrMetallicRoughness" : {}
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Mesh_35",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "source" : 0
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "model_baseColor",
+            "uri" : "model_baseColor.jpg"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 988294,
+            "max" : [
+                0.2710481882095337,
+                0.3527339696884155,
+                0.33967873454093933
+            ],
+            "min" : [
+                -0.299105703830719,
+                -0.40275123715400696,
+                -0.28449949622154236
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 988294,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 988294,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5125,
+            "count" : 3438546,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 11859528,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 11859528,
+            "byteOffset" : 11859528
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 7906352,
+            "byteOffset" : 23719056
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 13754184,
+            "byteOffset" : 31625408
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 45379592,
+            "uri" : "scene.bin"
+        }
+    ]
+}
