@@ -1,2 +1,2 @@
-Shared from Sara Carena
-https://sketchfab.com/3d-models/granite-brazil-7d41c07928004d3da9f085bd9a4c044c#download
+Shared from Ron Schott
+https://sketchfab.com/3d-models/cobble-of-cadillac-granite-ac93561b066b45ec840700a2e000bad7#download
