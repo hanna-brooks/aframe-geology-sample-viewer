@@ -1,19 +1,31 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Geology Sample Viewer</title>
-    <meta name="description" content="A Simple Sample Viewer for ERS101 at the University of Maine">
+<html lang="en">
 
-    <!-- Geology Sample Viewer AFRAME -->
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <script src="https://unpkg.com/aframe-orbit-controls@1.2.0/dist/aframe-orbit-controls.min.js"></script>
-    <script src="https://unpkg.com/aframe-supercraft-loader@1.1.3/dist/aframe-supercraft-loader.js"></script>
-    <!-- end AFRAME -->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1" />
+      <!-- Geology Sample Viewer AFRAME -->
+      <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+      <script src="https://unpkg.com/aframe-orbit-controls@1.2.0/dist/aframe-orbit-controls.min.js"></script>
+      <script src="https://unpkg.com/aframe-supercraft-loader@1.1.3/dist/aframe-supercraft-loader.js"></script>
+      <!-- end AFRAME -->
 
-  </head>
-  <body>
-    <!-- Geology Sample Viewer AFRAME -->
+  <script type="text/css"></script>
+  <link href="/content/enforced/8920-sb_0024119/../../../Styles6.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="home">
+<div id="site">
+<div id="content">
+<div class="hentry"><form name="form" id="form" action="">
+<div class="c1"><hr width="100%" />
+<script language="Javascript" type="text/javascript">
+
+</script>
+<h2>Identify the Texture, Grain Size, Composition and Rock Type</h2>
+<p style="text-align: center;"><img src="/content/enforced/8920-sb_0024119/PastedImage_0q6kr2fb0em68dlb1qzhacy97cz0qyxk0011758329.jpg" alt="Rock 2" title="Rock 2" style="max-width: 100%;" data-d2l-editor-default-img-style="true" width="587" height="439" /></p>
+<p style="text-align: center;">Image from Wenatchee Valley College</p>
+<!-- Geology Sample Viewer AFRAME -->
     <style>
       #geologySampleViewer {
         width:100%;
@@ -23,7 +35,7 @@
     <div id="geologySampleViewer">
         <a-scene embedded transparent>
           <a-assets>
-             <a-asset-item id="sample" src="https://rawcdn.githack.com/hanna-brooks/aframe-geology-sample-viewer/6ca7d79683b887d2e2f5833f5ea33ea24cd9bfcf/assets/metamorphic/phyllite/scene.gltf"></a-asset-item>
+             <a-asset-item id="sample" src="https://rawcdn.githack.com/hanna-brooks/aframe-geology-sample-viewer/8f222a95d8ac49f8b7a1c6589e2fc24f408035e0/assets/metamorphic/slate/scene.gltf"></a-asset-item>
            </a-assets>
            <a-entity camera look-controls orbit-controls="target: 0 1.6 0; minDistance: 0.3; maxDistance: 180; initialPosition: 0 1.6 .4; enablePan: false"></a-entity>
 
@@ -31,14 +43,89 @@
           <a-gltf-model drag-rotate-component src="#sample" position="0 1.6 0"></a-gltf-model>
       </a-scene>
     </div>
-    <p>Model from , Sketchfab</p>
+    <p>Model from Sara Carena, Sketchfab</p>
     <!-- end AFRAME -->
-    <p>
-    <hr />
-    <input type="button" value="Hydrochloric Acid Test" onClick='alert("The sample did not react to Hydrochloric acid")' onKeyPress="">
-  </div>
 
-    <p></p>
+<hr />
+<button type="button" onclick="alert('The sample did not react to Hydrochloric acid')">Hydrochloric Acid Test</button>
+<button type="button" onclick="alert('Tastes like salt')">Special Properties</button>
 
-   </body>
+
+<table summary="sedimentary Rock Identification Table" style="height: 579px; margin-left: auto; margin-right: auto;" border="" align="center">
+<tbody>
+<tr style="height: 20px;">
+<th colspan="4" style="height: 20px; width: 828.767px;"><span class="c4">Sedimentary Rock Identification Chart</span></th>
+</tr>
+<tr style="height: 20px;">
+<th style="height: 20px; width: 99.9167px;"><span class="c11">TEXTURE</span></th>
+<th style="height: 20px; width: 128.183px;" align="center"><span class="c11">GRAIN SIZE</span></th>
+<th style="height: 20px; width: 390.317px;" align="center"><span class="c10">COMPOSITION</span></th>
+<th style="height: 20px; width: 192.35px;" align="center">ROCK NAME</th>
+</tr>
+<tr style="height: 23px;">
+<td rowspan="4" style="height: 157px; width: 99.9167px;"><span class="c11">Clastic</span></td>
+<td style="height: 23px; width: 128.183px;"><span class="c9"><span class="c11">>2 mm</span></span></td>
+<td style="height: 23px; width: 390.317px;"><span class="c9"><span class="c10">rounded quartz, feldspar and rock fragments</span></span></td>
+<td style="height: 23px; width: 192.35px;">Conglomerate</td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px; width: 128.183px;"><span class="c9"><span class="c11">>2 mm</span></span></td>
+<td style="height: 23px; width: 390.317px;"><span class="c9"><span class="c10">angular quartz, feldspar and rock fragments</span></span></td>
+<td style="height: 23px; width: 192.35px;">Breccia</td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px; width: 128.183px;"><span class="c9"><span class="c11">1/16 - 2 mm</span></span></td>
+<td style="height: 23px; width: 390.317px;"><span class="c9"><span class="c10">quartz, feldspar</span></span></td>
+<td style="height: 23px; width: 192.35px;">Sandstone</td>
+</tr>
+<tr style="height: 42px;">
+<td style="height: 42px; width: 128.183px;"><span class="c9"><span class="c11"><1/16 mm</span></span></td>
+<td style="height: 42px; width: 390.317px;"><span class="c9"><span class="c10">quartz, clay minerals</span></span></td>
+<td style="height: 42px; width: 192.35px;">Siltstone                  (Mudstone, Shale)</td>
+</tr>
+<tr style="height: 23px;">
+<td rowspan="3" style="height: 115px; width: 99.9167px;"><span class="c11">Chemical</span></td>
+<td rowspan="3" style="height: 115px; width: 128.183px;"><span class="c9">no grain size</span></td>
+<td style="height: 23px; width: 390.317px;"><span class="c9"><span class="c10">calcite</span></span></td>
+<td style="height: 23px; width: 192.35px;">Limestone</td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px; width: 390.317px;"><span class="c9"><span class="c10">halite</span></span></td>
+<td style="height: 23px; width: 192.35px;">Rock Salt</td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px; width: 390.317px;"><span class="c9"><span class="c10">gypsum</span></span></td>
+<td style="height: 23px; width: 192.35px;">Rock Gypsum</td>
+</tr>
+<tr style="height: 23px;">
+<td rowspan="5" style="height: 267px; width: 99.9167px;"><span class="c11">Biologic</span></td>
+<td rowspan="5" style="height: 267px; width: 128.183px;"><span class="c9">no grain size</span></td>
+<td style="height: 42px; width: 390.317px;"><span class="c9"><span class="c10">densely compacted organic material and plant fragments</span></span></td>
+<td style="height: 42px; width: 192.35px;">Bituminous Coal</td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px; width: 390.317px;"><span class="c9"><span class="c10">calcite</span></span></td>
+<td style="height: 23px; width: 192.35px;">Limestone</td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px; width: 390.317px;"><span class="c9"><span class="c10">calcite, micro-skeletal fragments</span></span></td>
+<td style="height: 23px; width: 192.35px;">Chalk</td>
+</tr>
+<tr style="height: 38px;">
+<td style="height: 38px; width: 390.317px;"><span class="c9"><span class="c10">calcite, almost entirely shell and skeletal fragments</span></span></td>
+<td style="height: 38px; width: 192.35px;">Coquina</td>
+</tr>
+<tr style="height: 38px;">
+<td style="height: 38px; width: 390.317px;"><span class="c9"><span class="c10">calcite with some shell and skeletal fragments</span></span></td>
+<td style="height: 38px; width: 192.35px;">Fossiliferous Limestone</td>
+</tr>
+</tbody>
+</table>
+</div>
+</form></div>
+<hr />
+<p>Modified from R. Harwood [<a href="http://profharwood.x10host.com/GEOL101/Labs/Sediment/">http://profharwood.x10host.com/GEOL101/Labs/Sediment/</a>]</p>
+</div>
+</div>
+</body>
 </html>
