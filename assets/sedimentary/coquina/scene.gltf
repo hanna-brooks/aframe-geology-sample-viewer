@@ -1,0 +1,148 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.2.75",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                3
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Mesh_0.005"
+        },
+        {
+            "children" : [
+                0
+            ],
+            "name" : "PRI_Coquina.obj.cleaner.materialmerger.gles"
+        },
+        {
+            "children" : [
+                1
+            ],
+            "name" : "RootNode (model correction matrix)",
+            "rotation" : [
+                -0.264254629611969,
+                -0.6540939211845398,
+                0.3848363161087036,
+                0.5951736569404602
+            ],
+            "translation" : [
+                0.6913591623306274,
+                2.472046136856079,
+                4.676390647888184
+            ]
+        },
+        {
+            "children" : [
+                2
+            ],
+            "name" : "RootNode (gltf orientation matrix)",
+            "rotation" : [
+                -0.7071067690849304,
+                0,
+                0,
+                0.7071067690849304
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "emissiveFactor" : [
+                1,
+                1,
+                1
+            ],
+            "name" : "PRI_Coquina",
+            "pbrMetallicRoughness" : {}
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Mesh_0.005",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 21732,
+            "max" : [
+                -4.119801998138428,
+                2.875863790512085,
+                1.595591425895691
+            ],
+            "min" : [
+                -5.167516231536865,
+                2.2267019748687744,
+                0.4767114520072937
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 21732,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 21732,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 85824,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 260784,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 260784,
+            "byteOffset" : 260784
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 173856,
+            "byteOffset" : 521568
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 171648,
+            "byteOffset" : 695424
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 867072,
+            "uri" : "scene.bin"
+        }
+    ]
+}
